@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MTA on Javascript</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' => true %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript" src="assets/pages.js"></script>
+  <script src='js/jquery.js'></script>
+</head>
+<body>
+<div class="container">
+	<%= yield %>
+</div>
+</body>
+</html>

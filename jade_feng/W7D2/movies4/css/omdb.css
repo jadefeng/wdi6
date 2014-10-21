@@ -1,0 +1,40 @@
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+};
+
+/*.movieID {
+	background-color: orange;
+	max-width: 230px;
+	max-height: 350px;
+	overflow: hidden;
+	display: inline-table;
+}
+
+.movieID img {
+	max-width: 95%;
+	max-height: 300px;
+}*/
+
+#movie h3, #movie h4 {
+	color: white;
+};
+
+button {
+	font-family: 'Patua One', cursive;
+	color: #fff;
+	width: 185px;
+	height: 2.9em;
+	font-size: 1.3125em;
+	padding: 0.5em;
+	letter-spacing: 0.05em;
+	margin: 0;
+	border: 0;
+	text-transform: none;
+	background: #f0bf00 !important;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+}
