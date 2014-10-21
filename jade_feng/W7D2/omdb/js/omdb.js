@@ -15,8 +15,8 @@ var clearMovies = function() {
 };
 
 var searchMovies = function(event) {
-	search_results.empty();
-	movie_results.empty();
+	// if (search_results) { search_results.empty(); }
+	// if (movie_results) {movie_results.empty(); }
 
 	$('<h1>').text("Mew-vie Search").appendTo('#posters');
 	var query = $('#query').val();
@@ -52,9 +52,10 @@ var searchMovies = function(event) {
 				var poster_title = result2.Title;
 				console.log(poster_url);
 
-				$contain = $('<div class="movie_ID">'); // put data into here
+				$contain = $('<div class="movie_ID list_output_boxes">'); // put data into here
 				$('<img>', {src: poster_url}).appendTo($contain);
-				$('<h3>').text(poster_title).appendTo($contain);
+				$textdiv = $('<div class="text_name">').appendTo($contain);
+				$('<h4>').text(poster_title).appendTo($textdiv);
 				$contain.appendTo('#posters');
 				$contain.data('imdbID', result2.imdbID);
 			});
