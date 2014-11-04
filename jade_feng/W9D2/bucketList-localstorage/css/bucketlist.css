@@ -8,9 +8,10 @@ body {
 .entry_box {
 	width: 300px;
 	height: 400px;
+	display: inline-table;
 }
 
 .entry_box img {
 	width: 100%;
-	height: relative;
+	height: 250px;
 }
